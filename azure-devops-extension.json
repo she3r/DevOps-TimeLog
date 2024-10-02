@@ -1,16 +1,23 @@
 {
     "manifestVersion": 1,
-    "id": "DevOps-TimeLog",
-    "publisher": "TechsBCN",
-    "version": "1.0.0",
-    "name": "DevOps-TimeLog",
+    "id": "DevOps-TimeLog-wasm",
+    "publisher": "Soneta",
+    "version": "1.0.7",
+    "name": "DevOps-TimeLog-wasm",
     "description": "Azure DevOps extension for time logging",
     "categories": [
         "Azure Boards"
     ],
+	"scopes":[
+		"vso.project_manage",
+		"vso.code",
+		"vso.graph",
+		"vso.work",
+		"vso.analytics"
+	],
     "targets": [
         {
-            "id": "Microsoft.VisualStudio.Services.Cloud"
+            "id": "Microsoft.VisualStudio.Services"
         }
     ],
     "icons": {
@@ -22,6 +29,10 @@
         }
     },
     "files": [
+		{
+			"path":"static/sql-wasm.wasm",
+			"contentType":"application/wasm"
+		},
         {
             "path": "static",
             "addressable": true
