@@ -28,15 +28,15 @@
             "path": "overview.md"
         }
     },
-	{
-			"path":"static/sql-wasm.wasm",
-			"contentType":"application/wasm"
-		},
     "files": [
         {
             "path": "static",
             "addressable": true
         },
+		{
+		"path":"static/sql-wasm.wasm",
+		"contentType":"application/wasm"
+		},
         {
             "path": "dist",
             "addressable": true
